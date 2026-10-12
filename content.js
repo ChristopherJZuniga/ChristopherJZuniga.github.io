@@ -12,7 +12,7 @@ window.PORTFOLIO = {
      showThemePicker: true shows the style switcher in the corner.
      Set it to false once you've picked your favorite.            */
   theme: "clean",
-  showThemePicker: true,
+  showThemePicker: false,
 
   /* ---------- ABOUT YOU ---------- */
   name: "Christopher Zuniga",
@@ -30,7 +30,7 @@ window.PORTFOLIO = {
   email: "chriszuniga7@outlook.com",
   resume: "Zuniga_Resume.pdf",                 // upload your resume with this exact name, or "" to hide
   links: [
-    { label: "LinkedIn", url: "www.linkedin.com/in/christopher-zuniga-97518120b" },
+    { label: "LinkedIn", url: "https://www.linkedin.com/in/christopher-zuniga-97518120b" },
   ],
 
   /* ---------- EXPERIENCE ----------
@@ -89,7 +89,7 @@ window.PORTFOLIO = {
    {
       name: "Texas InventionWorks Trainings",
       dates: "September, 2025 - Present",
-      summary: "Undergo through various technical trainings from student workers at UT Austin's Texas InventionWorks (TIW) to learn or be more proficient at skills."
+      summary: "Undergo through various technical trainings from student workers at UT Austin's Texas InventionWorks (TIW) to learn or be more proficient at skills.",
       result: "Trained in 3D-printing, soldering, laser cutting, and operating manual mill and CNC machines and created mini projects to ensure practical understanding.",
       tags: ["3D-Printing", "Soldering", "Laser Cutting", "Manual Mill", "CNC"],
       url: "",
@@ -106,7 +106,7 @@ window.PORTFOLIO = {
       name: "Arduino Innovations @ Dallas College",
       dates: "February, 2025 - May, 2025",
       summary: "Engineered a 4 DOF robotic arm integrating motors, PCB, and other electronic copmonents for precise control.",
-      result: "The mechanical architecture of the system was functional and the electric/software side of the system successfully operated independently, but "
+      result: "The mechanical architecture of the system was functional and the electric/software side of the system successfully operated independently, but ",
       tags: ["Arduino", "Fusion 360", "KiCad", "Soldering", "Electrical/Mechanical Assembly"],
       url: "",
     },
@@ -128,5 +128,5 @@ window.PORTFOLIO = {
   ],
 
   /* ---------- AWARDS (optional, use [] for none) ---------- */
-  awards: ["James (Jim) E. Nugent Family Endowed Scholarship Fund in Engineering],
+  awards: ["James (Jim) E. Nugent Family Endowed Scholarship Fund in Engineering]
 };
