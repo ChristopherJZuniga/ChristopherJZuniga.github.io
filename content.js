@@ -128,5 +128,5 @@ window.PORTFOLIO = {
   ],
 
   /* ---------- AWARDS (optional, use [] for none) ---------- */
-  awards: ["James (Jim) E. Nugent Family Endowed Scholarship Fund in Engineering]
+  awards: ["James (Jim) E. Nugent Family Endowed Scholarship Fund in Engineering"]
 };
