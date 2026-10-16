@@ -17,18 +17,18 @@ window.PORTFOLIO = {
   /* ---------- ABOUT YOU ---------- */
   name: "Christopher Zuniga",
   initials: "CZ",                       // shown if you don't add a photo
-  photo: "",                            // optional: "images/headshot.jpg"
-  headline: "Mechanical engineer interested in robotics and creating the physical design and architecture of intelligent systems.",
+  photo: "![alt text](Headshot.JPG)",                            // optional: "images/headshot.jpg"
+  headline: "Mechanical Engineering student minoring in Robotics, passionate about kinematics, mechanical architecture, and the physical implementation of mechatronic and intelligent systems.",
   tagline: "I like building things with integrated systems.",   // used by the Story style
-  school: "ME at UT Austin, class of 2028",
+  school: "UT Austin '28",
   location: "Austin, TX",
-  status: "Looking for Summer 2027 internships",             // leave "" to hide
+  status: "Seeking Summer 2027 Internships",             // leave "" to hide
 
   about: "I've worked on robotic systems through personal projects, engineering courses, and student competition organizations.",
 
   /* ---------- CONTACT ---------- */
   email: "chriszuniga7@outlook.com",
-  resume: "Zuniga_Resume.pdf",                 // upload your resume with this exact name, or "" to hide
+  resume: "Zuniga.Resume.pdf",                 // upload your resume with this exact name, or "" to hide
   links: [
     { label: "LinkedIn", url: "https://www.linkedin.com/in/christopher-zuniga-97518120b" },
   ],
@@ -55,14 +55,6 @@ window.PORTFOLIO = {
       tags: ["Budgets", "Organization", "Financial Responsbility"],
     },
     {
-      role: "Field-Deployable Diagnostic Device - Nest 2026",
-      org: "Tau Beta Pi - Texas Alpha",
-      place: "Austin, TX",
-      dates: "April, 2026 - September 2026",
-      summary: "Created a BOM for an affordable, portable diagnostic device that addresses field healthcare needs.",
-      tags: ["Product Design", "BOM", "Manufacturing"],
-    },
-    {
       role: "Manufacturing Team Member",
       org: "Longhorn Baja Racing UT Austin",
       place: "Austin, TX",
@@ -79,25 +71,33 @@ window.PORTFOLIO = {
  
      projects: [
    {
-      name: "Robot Mechanism Design Course Project @ UT Austin",
+      name: "Robot Mechanism Design Project | 08/2026 - Present",
       dates: "August, 2026 - Present",
-      summary: "Designing and fabricating a stationary bat with wings thats motion focuses on its Jansen linkage architecture under the wings, rather than through multiple servos.",
+      summary: "Currently in its early design and prototyping stages, this project involves designing and fabricating a stationary mechanical bat driven by dual actuators, one for each wing, where each wing uses a single-input Jansen linkage architecture to generate complex flapping motion rather than through multiple servos. The featured image showcases a baseline 4-bar mechanism, illustrating how this fundamental mechanism will scale and evolve into the final multi-linkage wing assembly",
       result: "Project is still ongoing, but I managed to create a 4-bar mechanism that focuses on the fundamentals needed to create a more complex project, such as the final bat project.",
       tags: ["Mechanisms", "SolidWorks", "Soldering", "Robotics"],
       url: "",
     },
+    {
+      name: "Field-Deployable Crush-Syndrome Treatment Device | 04/2026 - 09/2026",
+      dates: "Tau Beta Pi - Texas Alpha",
+      summary: "Austin, TX",
+      dates: "April, 2026 - September 2026",
+      summary: "My team and I designed an affordable and portable potassium test strip to treat crush-syndrome in post-disaster scenarios, choosing durable, low-cost materials that could handle real-world field use. I was responsible for mapping out a roll-to-roll manufacturing plan and ran a full cost analysis to get the material budget down to less than $3 per test.",
+      tags: ["Product Design", "BOM", "Manufacturing"],
+    },
    {
-      name: "Texas InventionWorks Trainings",
+      name: "Texas InventionWorks Trainings | 09/2025 - Present",
       dates: "September, 2025 - Present",
-      summary: "Undergo through various technical trainings from student workers at UT Austin's Texas InventionWorks (TIW) to learn or be more proficient at skills.",
-      result: "Trained in 3D-printing, soldering, laser cutting, and operating manual mill and CNC machines and created mini projects to ensure practical understanding.",
+      summary: "Underwent hands-on technical trainings led by Texas InventionWorks (TIW) staff, developing proficiency in 3D printing, laser cutting, CNC milling, and soldering",
+      result: "Trained in 3D-printing, soldering, laser cutting, and operating manual mill and created mini projects to ensure practical understanding.",
       tags: ["3D-Printing", "Soldering", "Laser Cutting", "Manual Mill", "CNC"],
       url: "",
     },    
    {
-      name: "Design Graphics Course Battle Bot Project @ UT Austin",
+      name: "Design Graphics Battle Bot Project | 08/2025 - 12/2025",
       dates: "August, 2025 - December, 2025",
-      summary: "Collaborated with peers to design and fabricate a RC car that is meant to combat other cars via its shell design. I focused on creating the various motor mounts required by our project, such as for the motors, battery, and bluetooth connector components.",
+      summary: "Collaborated with a team to design and fabricate a remote-controlled combat robot. I focused on mechanical integration, designing custom structural mounts for internal mechatronic components to maintain component integrity during vehicle-to-vehicle combat.",
       result: "Motor mounts required multiple iterations based on the constraints of the shell dimensions, but turned out to be fully operational and received a positive grade at the project's conclusion.",
       tags: ["Gantt Chart", "SolidWorks", "3D-Printing", "Project Design"],
       url: "",
@@ -123,10 +123,13 @@ window.PORTFOLIO = {
   /* ---------- SKILLS ----------
      Group them however makes sense for your major.               */
   skills: [
-    { group: "Languages",  items: ["MATLAB", "Python"] },
-    { group: "CAD Programs", items: ["SolidWorks", "Fusion 360", "Onshape"] },
+    { group: "CAD Programs", items: ["SolidWorks", "Fusion 360", "Onshape"]},
+    { group: "Languages",  items: ["MATLAB", "Python","Fabrication","KiCad",] },
   ],
 
   /* ---------- AWARDS (optional, use [] for none) ---------- */
-  awards: ["James (Jim) E. Nugent Family Endowed Scholarship Fund in Engineering"]
+  awards: ["James (Jim) E. Nugent Family Endowed Scholarship Fund in Engineering 2026-2027",
+    "Community College Innovation Challenge 3rd Place",
+    "Tau Beta Pi Nest Design Project 1st Place"
+  ]
 };

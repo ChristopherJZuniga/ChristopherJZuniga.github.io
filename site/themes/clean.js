@@ -19,7 +19,7 @@ window.THEMES.clean = {
     var skills = [];
     h.list(d.skills).forEach(function (s) { h.list(s.items).forEach(function (it) { skills.push("<span>" + e(it) + "</span>"); }); });
     var awards = h.list(d.awards).length
-      ? '<section><h2>Recognition</h2><div class="skills">' + d.awards.map(function (a) { return "<span>" + e(a) + "</span>"; }).join("") + "</div></section>"
+      ? '<section><h2>Awards</h2><div class="skills">' + d.awards.map(function (a) { return "<span>" + e(a) + "</span>"; }).join("") + "</div></section>"
       : "";
     var links = h.list(d.links).map(function (l, i) {
       return '<a class="btn' + (i === 0 ? " primary" : "") + '" href="' + h.url(l.url) + '"' + h.ext(l.url) + ">" + e(l.label) + "</a>";
@@ -29,11 +29,12 @@ window.THEMES.clean = {
       '<header><div class="me">' + h.avatar("avatar") + e(d.name) + '</div><nav><a href="#work">Work</a><a href="#experience">Experience</a><a href="#contact">Contact</a></nav></header>' +
       '<section class="hero"><h1>' + e(d.headline) + " <span>" + e(d.school) + ".</span></h1><p>" + e(d.about) + "</p>" +
       (d.status ? '<span class="now"><i aria-hidden="true"></i>' + e(d.status) + "</span>" : "") + "</section>" +
-      '<section id="work"><h2>Selected work</h2><div class="grid">' + projects + "</div></section>" +
+      '<section id="work"><h2>Projects</h2><div class="grid">' + projects + "</div></section>" +
       '<section id="experience"><h2>Experience</h2><ul class="xp">' + xp + "</ul></section>" +
-      '<section><h2>Stack</h2><div class="skills">' + skills.join("") + "</div></section>" + awards +
+      //'<section><h2>Skills</h2><div class="skills">' + skills.join("") + "</div></section>" 
+      awards +
       '<section id="contact" class="contact"><h2>Contact</h2><div class="links">' + links +
-      (d.resume ? '<a class="btn" href="' + h.url(d.resume) + '">Resume</a>' : "") +
+      //(d.resume ? '<a class="btn" href="' + h.url(d.resume) + '">Resume</a>' : "") +
       (d.email ? '<a class="email" href="mailto:' + e(d.email) + '">' + e(d.email) + "</a>" : "") + "</div></section>" +
       "<footer>© " + new Date().getFullYear() + " " + e(d.name) + "</footer></div>";
   },
