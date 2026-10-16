@@ -17,7 +17,7 @@ window.PORTFOLIO = {
   /* ---------- ABOUT YOU ---------- */
   name: "Christopher Zuniga",
   initials: "CZ",                       // shown if you don't add a photo
-  photo: "![alt text](Headshot.JPG)",                            // optional: "images/headshot.jpg"
+  photo: "images/Headshot.jpg",                            // optional: "images/headshot.jpg"
   headline: "Mechanical Engineering student minoring in Robotics, passionate about kinematics, mechanical architecture, and the physical implementation of mechatronic and intelligent systems.",
   tagline: "I like building things with integrated systems.",   // used by the Story style
   school: "UT Austin '28",
