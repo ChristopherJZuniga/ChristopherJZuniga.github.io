@@ -8,9 +8,13 @@ window.THEMES.clean = {
       var tag = p.url ? "a" : "div";
       var href = p.url ? ' href="' + h.url(p.url) + '"' + h.ext(p.url) : "";
       return "<" + tag + ' class="proj"' + href + '><div class="shot"><div class="dots"><b></b><b></b><b></b></div>' +
-        '<div class="screen s' + ((i % 4) + 1) + '">' + e(p.name) + "</div></div>" +
-        "<h3>" + e(p.name) + " <small>" + e(h.list(p.stack).slice(0, 2).join(" · ")) + "</small></h3>" +
-        "<p>" + e(p.summary) + (p.result ? " " + e(p.result) + "." : "") + "</p></" + tag + ">";
+      (p.image 
+        ? '<img class="project-image" src="' + h.url(p.image) + '" alt="' + e(p.name) + '" loading="lazy">'
+        : '<div class="screen s' + ((i % 4) + 1) + '">' + e(p.name) + '</div>'
+      ) + 
+      "</div>" +
+      "<h3>" + e(p.name) + " <small>" + e(h.list(p.stack).slice(0, 2).join(" · ")) + "</small></h3>" +
+      "<p>" + e(p.summary) + (p.result ? " " + e(p.result) + "." : "") + "</p></" + tag + ">";
     }).join("");
     var xp = h.list(d.experience).map(function (j) {
       return '<li><div class="logo">' + e(h.abbr(j.org)) + '</div><div><div class="role">' + e(j.role) + '</div><div class="org">' +
@@ -26,7 +30,13 @@ window.THEMES.clean = {
     }).join("");
 
     return '<div class="wrap">' +
-      '<header><div class="me">' + h.avatar("avatar") + e(d.name) + '</div><nav><a href="#work">Work</a><a href="#experience">Experience</a><a href="#contact">Contact</a></nav></header>' +
+      '<header><div class="me">' +
+  (d.photo
+    ? '<img class="avatar" src="' + h.url(d.photo) + '" alt="' + e(d.name) + '">'
+    : h.avatar("avatar")
+  ) +
+  e(d.name) +
+  '</div><nav><a href="#work">Work</a><a href="#experience">Experience</a><a href="#contact">Contact</a></nav></header>' +
       '<section class="hero"><h1>' + e(d.headline) + " <span>" + e(d.school) + ".</span></h1><p>" + e(d.about) + "</p>" +
       (d.status ? '<span class="now"><i aria-hidden="true"></i>' + e(d.status) + "</span>" : "") + "</section>" +
       '<section id="work"><h2>Projects</h2><div class="grid">' + projects + "</div></section>" +

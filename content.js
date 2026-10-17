@@ -17,7 +17,7 @@ window.PORTFOLIO = {
   /* ---------- ABOUT YOU ---------- */
   name: "Christopher Zuniga",
   initials: "CZ",                       // shown if you don't add a photo
-  photo: "images/Headshot.jpg",                            // optional: "images/headshot.jpg"
+  photo: "images/Headshot.JPG",                            // optional: "images/headshot.jpg"
   headline: "Mechanical Engineering student minoring in Robotics, passionate about kinematics, mechanical architecture, and the physical implementation of mechatronic and intelligent systems.",
   tagline: "I like building things with integrated systems.",   // used by the Story style
   school: "UT Austin '28",
@@ -74,6 +74,7 @@ window.PORTFOLIO = {
       name: "Robot Mechanism Design Project | 08/2026 - Present",
       dates: "August, 2026 - Present",
       summary: "Currently in its early design and prototyping stages, this project involves designing and fabricating a stationary mechanical bat driven by dual actuators, one for each wing, where each wing uses a single-input Jansen linkage architecture to generate complex flapping motion rather than through multiple servos. The featured image showcases a baseline 4-bar mechanism, illustrating how this fundamental mechanism will scale and evolve into the final multi-linkage wing assembly",
+      image: "images/4BarMechanism.jpg",
       result: "Project is still ongoing, but I managed to create a 4-bar mechanism that focuses on the fundamentals needed to create a more complex project, such as the final bat project.",
       tags: ["Mechanisms", "SolidWorks", "Soldering", "Robotics"],
       url: "",
@@ -82,6 +83,7 @@ window.PORTFOLIO = {
       name: "Field-Deployable Crush-Syndrome Treatment Device | 04/2026 - 09/2026",
       dates: "Tau Beta Pi - Texas Alpha",
       summary: "Austin, TX",
+      image: "images/TBP-Nest26.jpg",
       dates: "April, 2026 - September 2026",
       summary: "My team and I designed an affordable and portable potassium test strip to treat crush-syndrome in post-disaster scenarios, choosing durable, low-cost materials that could handle real-world field use. I was responsible for mapping out a roll-to-roll manufacturing plan and ran a full cost analysis to get the material budget down to less than $3 per test.",
       tags: ["Product Design", "BOM", "Manufacturing"],
@@ -90,6 +92,7 @@ window.PORTFOLIO = {
       name: "Texas InventionWorks Trainings | 09/2025 - Present",
       dates: "September, 2025 - Present",
       summary: "Underwent hands-on technical trainings led by Texas InventionWorks (TIW) staff, developing proficiency in 3D printing, laser cutting, CNC milling, and soldering",
+      image: "images/TIWPortfolio.jpg",
       result: "Trained in 3D-printing, soldering, laser cutting, and operating manual mill and created mini projects to ensure practical understanding.",
       tags: ["3D-Printing", "Soldering", "Laser Cutting", "Manual Mill", "CNC"],
       url: "",
@@ -98,6 +101,7 @@ window.PORTFOLIO = {
       name: "Design Graphics Battle Bot Project | 08/2025 - 12/2025",
       dates: "August, 2025 - December, 2025",
       summary: "Collaborated with a team to design and fabricate a remote-controlled combat robot. I focused on mechanical integration, designing custom structural mounts for internal mechatronic components to maintain component integrity during vehicle-to-vehicle combat.",
+      image: "images/ME302 Final Project.jpeg",
       result: "Motor mounts required multiple iterations based on the constraints of the shell dimensions, but turned out to be fully operational and received a positive grade at the project's conclusion.",
       tags: ["Gantt Chart", "SolidWorks", "3D-Printing", "Project Design"],
       url: "",
@@ -106,6 +110,7 @@ window.PORTFOLIO = {
       name: "Arduino Innovations @ Dallas College",
       dates: "February, 2025 - May, 2025",
       summary: "Engineered a 4 DOF robotic arm integrating motors, PCB, and other electronic copmonents for precise control.",
+      image: "images/RoboticArm.jpeg",
       result: "The mechanical architecture of the system was functional and the electric/software side of the system successfully operated independently, but ",
       tags: ["Arduino", "Fusion 360", "KiCad", "Soldering", "Electrical/Mechanical Assembly"],
       url: "",
@@ -114,6 +119,7 @@ window.PORTFOLIO = {
       name: "CCIC - Team AVIADAR @ Dallas College",
       dates: "November, 2024 - June, 2025",
       summary: "I developed a physical CAD model of my team's hazard-detection LiDAR system for the Community College Innovation Challenge (CCIC), integrating NASA technology with our system through its T2U program.",
+      image: "images/CCIC-Poster.jpg",
       result: "My team and I placed 3rd nationally after advancing the finalist stage of the competition vs 11 other teams and giving a poster presentation at Capitol Hill, as well as an in-person pitch to a panel of judges.",
       tags: ["Research","Innovation","LIDAR","Poster Presentation","Project Pitch"],
       url: "",
